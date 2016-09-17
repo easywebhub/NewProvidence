@@ -38,5 +38,56 @@
         "validations": [],
         "viewOnly": false,
         "required": false
+    },
+    {
+        "name": "socials",
+        "displayName": "socials",
+        "type": "Array",
+        "validations": [],
+        "required": false
+    },
+    {
+        "name": "imageLgClose",
+        "displayName": "imageLgClose",
+        "type": "Text",
+        "validations": [],
+        "viewOnly": false,
+        "required": false
+    },
+    {
+        "name": "imageLg",
+        "displayName": "imageLg",
+        "type": "Text",
+        "validations": [],
+        "viewOnly": false,
+        "required": false
+    },
+    {
+        "name": "head",
+        "displayName": "head",
+        "type": "Object",
+        "validations": [],
+        "required": false
+    },
+    {
+        "name": "iphoneFeature",
+        "displayName": "iphoneFeature",
+        "type": "Object",
+        "validations": [],
+        "required": false
+    },
+    {
+        "name": "mapFeature",
+        "displayName": "mapFeature",
+        "type": "Object",
+        "validations": [],
+        "required": false
+    },
+    {
+        "name": "iphoneScreens",
+        "displayName": "iphoneScreens",
+        "type": "Object",
+        "validations": [],
+        "required": false
     }
 ]
