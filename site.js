@@ -94,21 +94,6 @@ site.metalsmith = {
 		'directory': `${site.metadataRoot}/tag`
     },
 
-    'metalsmith-collections':   {
-        '_enable': true,
-         // collection theo file pattern + test limit
-        'blog':    {
-            'pattern': 'blog/**/*.html',
-            'sortBy':  'date',
-            'reverse': true,
-        },
-         // collection theo key trong metadata `"collection": "baiviet"`
-        'baiviet': {
-            'sortBy':  'date',
-            'reverse': true
-        }
-    },
-
     //'metalsmith-pagination':    {
     //    '_enable': true,
     //    'collections.blog':    {
@@ -127,12 +112,7 @@ site.metalsmith = {
         '_enable':  true,
         // default config
         'pattern':  ':slug',
-        'relative': false,
-        // config rieng cho 1 collection
-        linksets:   [{
-            match:   {collection: 'blog'},
-            pattern: 'blog/:slug'
-        }]
+        'relative': false
     },
 
     'metalsmith-layouts':       {
