@@ -2,43 +2,51 @@
     <div class="container footer-container">
       <div class="row">
         <div class="col-md-3">
-          <img class="logo" src="images/logo.png" alt="">
-          <p>It was some time before he obtained any answer, and the reply, when made, was unpropitious.</p>
-          <a href="#" class="app_download"><img src="images/app-store-download.png" alt=""></a>
+          <img class="logo" src="{{imageLg}}" alt="">
+          <p>{{footer.name}}</p>
+          <a href="#" class="app_download"><img src="{{footer.imageD}}" alt=""></a>
           <ul class="socials">
-            <li><a href="#"><i class="fa fa-twitter"></i></a></li>
-            <li><a href="#"><i class="fa fa-facebook"></i></a></li>
-            <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
-            <li><a href="#"><i class="fa fa-tumblr"></i></a></li>
-            <li><a href="#"><i class="fa fa-pinterest-p"></i></a></li>
-            <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+            {{#each socials}}
+            <li><a href="{{url}}"><i class="{{class}}"></i></a></li>
+            {{/each}}
           </ul>
         </div>
+        
+
         <div class="col-md-2 col-md-offset-3 col-sm-4 col-xs-6 footer-links">
           <ul>
-            <li><p class="title">Learn More</p></li>
-            <li><a href="#">How it works?</a></li>
-            <li><a href="#">Meeting tools</a></li>
-            <li><a href="#">Live striming</a></li>
-            <li><a href="#">Contat method</a></li>
+            {{#each footer.items}}
+               {{#if @first}}
+                     <li><p class="title">{{title}}</p></li>
+                {{else}}
+                     <li><a href="{{url}}">{{title}}</a></li>
+                {{/if}} 
+            {{/each}}
+            
+            
           </ul>
         </div>
         <div class="col-md-2 col-sm-4 col-xs-6 footer-links">
           <ul>
-            <li><p class="title">About Us</p></li>
-            <li><a href="#">About us</a></li>
-            <li><a href="#">Features</a></li>
-            <li><a href="#">Privacy police</a></li>
-            <li><a href="#">Terms & Conditions</a></li>
+           {{#each footer.items1}}
+               {{#if @first}}
+                     <li><p class="title">{{title}}</p></li>
+                {{else}}
+                     <li><a href="{{url}}">{{title}}</a></li>
+                {{/if}} 
+            {{/each}}
           </ul>
         </div>
+        
         <div class="col-md-2 col-sm-4 col-xs-6 footer-links">
           <ul>
-            <li><p class="title">Support</p></li>
-            <li><a href="#">F.A.Q.</a></li>
-            <li><a href="#">Contact us</a></li>
-            <li><a href="#">Live chat</a></li>
-            <li><a href="#">Phone call</a></li>
+            {{#each footer.items2}}
+               {{#if @first}}
+                     <li><p class="title">{{title}}</p></li>
+                {{else}}
+                     <li><a href="{{url}}">{{title}}</a></li>
+                {{/if}} 
+            {{/each}}
           </ul>
         </div>
       </div>
@@ -47,11 +55,13 @@
       <div class="row">
         <div class="col-md-6 text-left">
           <div class="more-info">
-            For more freebies visit: <a href="http://getcraftwork.com">http://getcraftwork.com</a>
+            
+            {{footer.title}}<a href="{{footer.url}}">{{footer.image}}</a>
           </div>
         </div>
         <div class="col-md-6 text-right">
-          <div class="made-by">Made with Love by <a href="http://getcraftwork.com" target="_blank"><img src="images/craftwork.png" alt=""></a></div>
+          
+          <div class="made-by">{{footer.title}} <a href="{{footer.url}}" target="_blank"><img src="{{footer.image}}" alt=""></a></div>
         </div>
       </div>
     </div>

@@ -11,15 +11,5 @@
         ],
         "moreInfo":[{"title":"Made with love by","url":"http://getcraftwork.com","name":"Craft Work"},
         {"title":"Developed by","url":"http://ruibogasdesign.net/","name":"Rui Bogas"}
-        ],
-        "socials":[{"url":"#","class":"fa fa-twitter"},
-            {"url":"#","class":"fa fa-facebook"},
-            {"url":"#","class":"fa fa-google-plus"},
-            {"url":"#","class":"fa fa-tumblr"},
-            {"url":"#","class":"fa fa-pinterest-p"},
-            {"url":"#","class":"fa fa-linkedin"}
-            ],
-             "imageLgClose":"images/logo-white.png",
-        
-        "imageLg":"images/logo.png"
+        ]
 }

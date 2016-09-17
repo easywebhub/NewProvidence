@@ -1,20 +1,25 @@
 {
     "title": "Handcrafted by Afnizar Nur Ghifari",
-     "items": [{
-            "class": "fa fa-send",
-            "url": "mailto:afnizarhilmi@gmail.com"
-        },
-        {
-            "class": "fa fa-twitter",
-            "url": "http://twitter.com/flamekaizar"
-        },
-        {
-            "class": "fa fa-dribbble",
-            "url": "http://dribbble.com/flamekaizar"
-        },
-        {
-            "class": "fa fa-behance",
-            "url": "http://behance.com/flamekaizar"
-        }
-    ]
+    "name":"It was some time before he obtained any answer, and the reply, when made, was unpropitious.",
+    "imageD":"images/app-store-download.png",
+    "items":[{"url":"#","title":"Learn More"},
+          {"url":"#","title":"How it works?"},
+          {"url":"#","title":"Meeting tools"},
+          {"url":"#","title":"Live striming"},
+          {"url":"#","title":"Contat method"}
+        ],
+    "items1":[{"url":"#","title":"About Us"},
+          {"url":"#","title":"About us"},
+          {"url":"#","title":"Features"},
+          {"url":"#","title":"Privacy police"},
+          {"url":"#","title":"Terms & Conditions"}
+        ],
+         "items2":[{"url":"#","title":"Support"},
+          {"url":"#","title":"F.A.Q."},
+          {"url":"#","title":"Contact us"},
+          {"url":"#","title":"Live chat"},
+          {"url":"#","title":"Phone call"}
+        ],
+        "textLeft":{"title":"For more freebies visit:","url":"http://getcraftwork.com","name":"http://getcraftwork.com"},
+            "textRight":{"title":"Made with Love by:","url":"http://getcraftwork.com","image":"images/craftwork.png"}
 }

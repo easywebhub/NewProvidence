@@ -36,7 +36,7 @@
 
       <div id="slide_out_menu">
         <a href="#" class="menu-close"><i class="fa fa-times"></i></a>
-        <div class="logo"><img src="images/logo-white.png" alt=""></div>
+        <div class="logo"><img src="{{imageLgClose}}" alt=""></div>
         <ul>
            
            {{#each (first menu.items 5) }}
@@ -54,7 +54,7 @@
           </div>
             
           <ul class="socials">
-            {{#each menu.socials}}
+            {{#each socials}}
             <li><a href="{{url}}"><i class="{{class}}"></i></a></li>
             {{/each}}
           </ul>
@@ -70,8 +70,9 @@
             
           </ul>
         </div>
+       
         <div class="col-md-4 text-center">
-          <a href="#" class="logo"><img src="images/logo.png" alt="New Providence"></a>
+          <a href="#" class="logo"><img src="{{imageLg}}" alt="New Providence"></a>
         </div>
         <div class="col-md-4">
           <ul class="right">
