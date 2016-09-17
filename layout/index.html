@@ -101,30 +101,21 @@
     <div class="container">
       <div class="row">
         <div class="col-md-12 text-center">
-          <h2>Beautiful Interface</h2>
+          <h2>{{iphoneScreens.title}}</h2>
           <hr>
-          <p class="subtitle">Landing Screen</p>
+          <p class="subtitle">{{iphoneScreens.name}}</p>
         </div>
       </div>
     </div>
 
     <div class="images-showcase wow fadeIn">
       <ul class="images-list">
-        <li>
-          <img src="images/interface/img-1.png" alt="">
+        {{#each iphoneScreens.items}}
+        <li class="{{class}}">
+          <img src="{{image}}" alt="">
         </li>
-        <li>
-          <img src="images/interface/img-2.png" alt="">
-        </li>
-        <li class="main-img">
-          <img src="images/interface/main-img.png" alt="">
-        </li>
-        <li>
-          <img src="images/interface/img-3.png" alt="">
-        </li>
-        <li>
-          <img src="images/interface/img-4.png" alt="">
-        </li>
+        {{/each}}
+        
       </ul>
     </div>
     
