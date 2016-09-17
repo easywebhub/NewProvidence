@@ -46,7 +46,7 @@
             {{iphoneFeature.title}}
           </h2>
           <p>
-             {{iphoneFeature.metadata}}
+             {{{iphoneFeature.metadata}}}
           </p>
           <div class="btns-container">
              {{#each iphoneFeature.btns}}
@@ -71,24 +71,25 @@
     <div class="container">
       <div class="row">
         <div class="col-md-5">
-          <h2>We are almost everywhere</h2>
+           
+          <h2>{{mapFeature.title}}</h2>
           <p>
-            Now the races of these two have been for some ages utterly extinct, and besides to discourse any further of them would not be at all to my purpose.
-            <br><br>
-            Thus much I thought proper to tell you in relation to yourself, and to the trust I reposed in you.
+             {{{mapFeature.metadata}}}
           </p>
           <div class="partners">
-            <div class="title">Partners</div>
+            <div class="title">{{mapFeature.partners.title}}</div>
             <ul>
-              <li><a href="#"><img src="images/dropbox.png" alt="Dropbox"></a></li>
-              <li><a href="#"><img src="images/evernote.png" alt="Dropbox"></a></li>
+               {{#each mapFeature.partners.items}}
+              <li><a href="{{url}}"><img src="{{image}}" alt="{{title}}"></a></li>
+              {{/each}}
+              
             </ul>
           </div>
         </div>
 
         <div class="map-showcase wow fadeInRight">
           <div class="map">
-            <img src="images/map.png" alt="">
+            <img src="{{mapFeature.image}}" alt="">
           </div>
         </div><!-- //Map Showcase -->
 

@@ -13,5 +13,12 @@
         "type": "Array",
         "validations": [],
         "required": false
+    },
+    {
+        "name": "moreInfo",
+        "displayName": "moreInfo",
+        "type": "Array",
+        "validations": [],
+        "required": false
     }
 ]
