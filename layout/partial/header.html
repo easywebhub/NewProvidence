@@ -38,26 +38,25 @@
         <a href="#" class="menu-close"><i class="fa fa-times"></i></a>
         <div class="logo"><img src="images/logo-white.png" alt=""></div>
         <ul>
-          <li><a href="#">Tour</a></li>
-          <li><a href="#">Features</a></li>
-          <li><a href="#">Pricing</a></li>
-          <li><a href="#">Help</a></li>
-          <li><a href="#">Contacts</a></li>
-          <li><a href="#" class="btn btn-blue"><i class="fa fa-apple"></i> Get App</a></li>
+           
+           {{#each (first menu.items 5) }}
+              <li><a href="{{url}}">{{title}}</a></li>  
+           {{/each}}
+           <li><a href="#" class="btn btn-blue"><i class="fa fa-apple"></i>{{menu.items.[5].title}}</a></li>
         </ul>
 
         <div class="slide_out_menu_footer">
           <div class="more-info">
-            <p>Made with love by <a href="http://getcraftwork.com">Craft Work</a></p>
-            <p>Developed by <a href="http://ruibogasdesign.net/">Rui Bogas</a>
+             {{#each menu.moreInfo}}
+            <p>{{title}}<a href="{{url}}">{{name}}</a></p>
+            {{/each}}
+            
           </div>
+            
           <ul class="socials">
-            <li><a href="#"><i class="fa fa-twitter"></i></a></li>
-            <li><a href="#"><i class="fa fa-facebook"></i></a></li>
-            <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
-            <li><a href="#"><i class="fa fa-tumblr"></i></a></li>
-            <li><a href="#"><i class="fa fa-pinterest-p"></i></a></li>
-            <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+            {{#each menu.socials}}
+            <li><a href="{{url}}"><i class="{{class}}"></i></a></li>
+            {{/each}}
           </ul>
         </div>
       </div>
@@ -65,9 +64,10 @@
       <div class="row">
         <div class="col-md-4">
           <ul class="left">
-            <li><a href="#">Tour</a></li>
-            <li><a href="#">Features</a></li>
-            <li><a href="#">Pricing</a></li>
+            {{#each (first menu.items 3)}}
+            <li><a href="{{url}}">{{title}}</a></li>
+            {{/each}}
+            
           </ul>
         </div>
         <div class="col-md-4 text-center">
@@ -75,9 +75,10 @@
         </div>
         <div class="col-md-4">
           <ul class="right">
-              <li><a href="#" class="help">Help</a></li>
-              <li><a href="#">Contacts</a></li>
-              <li><a href="#" class="btn btn-blue"><i class="fa fa-apple"></i> Get App</a></li>
+               {{#each (last (first menu.items 5)  2) }}
+              <li><a href="{{url}}" class="help">{{title}}</a></li>
+               {{/each}}
+              <li><a href="{{menu.items.[5].url}}" class="btn btn-blue"><i class="fa fa-apple">{{menu.items.[5].title}}</i></a></li>
           </ul>
         </div>
       </div>
