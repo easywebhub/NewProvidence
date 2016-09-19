@@ -1,10 +1,10 @@
 {
-  "title": "New Providence",
-  "description": "Thousands of developers use EasyWebHub to build personal, company, blog, ecommerce websites, support their businesses, and work together on open source technologies.",
-  "url": "https://easywebhub.github.io/NewProvidence/",
-  "github-url" : "https://easywebhub.github.io/NewProvidence/",
-  "meta-tag" : {
-    "keywords": "website templates, easywebhub, easyapp",
-    "author": "VinaAS Co.,Ltd"
-  }
+    "title": "New Providence",
+    "description": "Thousands of developers use EasyWebHub to build personal, company, blog, ecommerce websites, support their businesses, and work together on open source technologies.",
+    "url": "https://newprovidence.easywebhub.com",
+    "github-url": "https://newprovidence.easywebhub.com",
+    "meta-tag": {
+        "keywords": "website templates, easywebhub, easyapp",
+        "author": "VinaAS Co.,Ltd"
+    }
 }
