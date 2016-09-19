@@ -89,5 +89,33 @@
         "type": "Object",
         "validations": [],
         "required": false
+    },
+    {
+        "name": "readyToBuy",
+        "displayName": "readyToBuy",
+        "type": "Object",
+        "validations": [],
+        "required": false
+    },
+    {
+        "name": "subscribe",
+        "displayName": "subscribe",
+        "type": "Object",
+        "validations": [],
+        "required": false
+    },
+    {
+        "name": "customers",
+        "displayName": "customers",
+        "type": "Object",
+        "validations": [],
+        "required": false
+    },
+    {
+        "name": "plan",
+        "displayName": "plan",
+        "type": "Object",
+        "validations": [],
+        "required": false
     }
 ]
